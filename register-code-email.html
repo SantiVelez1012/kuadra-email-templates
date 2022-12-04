@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://css.gg/css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    </style>
+    <style>
+      * {
+        font-family: "Montserrat";
+        font-style: normal;
+      }
+      main {
+        width: 600px;
+        margin-bottom: 30px 0;
+      }
+
+      .email-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .email-title{
+        margin: 50px;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(255, 152, 29);
+      }
+      .email-otp{
+        margin-bottom: 50px;
+        color: rgb(255, 152, 29);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="email-title email-container"> <h2>Bienvenido a la comunidad de negocios que no paran de crecer </h2> </span>
+      <span class="email-text email-container"> <p> Continúa tu registro con el siguiente código: </p> </span>
+      <!-- TODO: REEMPLAZAR TEXTO DE LA SIGUIENTE ETIQUETA POR LA VARIABLE DINÁMICA DEL OTP GENERADO DESDE EL BACKEND -->
+      <span class="email-otp email-container"> <h3> {{OTP CODE}} </h3> </span>
+    </main>
+  </body>
+</html>
