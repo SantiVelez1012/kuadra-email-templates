@@ -14,7 +14,37 @@
         font-family: "Montserrat";
         font-style: normal;
       }
+      main {
+        max-width: 600px;
+        width: 100%;
+        margin-bottom: 30px 0;
+      }
 
+      .email-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .email-title{
+        margin: 50px;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(255, 152, 29);
+      }
+      .email-otp{
+        margin-bottom: 50px;
+        color: rgb(255, 152, 29);
+      }
+      .email-text{
+        text-align: center;
+      }
+      svg{
+        max-width: 200px;
+        width: 100%;
+      }
+    </style>
+    <style>
       header,
       footer {
         max-width: 600px;
@@ -30,10 +60,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-      svg{
-        max-width: 200px;
-        width: 100%;
       }
       .s-upperHeader {
         background: #f1f1f1;
@@ -110,12 +136,16 @@
             <path d="M621.535 72.3464C624.07 68.7634 627.464 66.0532 631.719 64.2158C636.064 62.3784 641.042 61.4597 646.655 61.4597V81.3038C644.301 81.12 642.717 81.0282 641.902 81.0282C635.837 81.0282 631.085 82.7737 627.645 86.2648C624.205 89.664 622.485 94.8088 622.485 101.699V136.702H601.303V62.5621H621.535V72.3464Z" fill="#8136F5"/>
             <path d="M688.317 61.4597C699.632 61.4597 708.322 64.2158 714.387 69.728C720.452 75.1484 723.484 83.3709 723.484 94.3954V136.702H703.66V127.469C699.677 134.359 692.254 137.804 681.392 137.804C675.779 137.804 670.891 136.84 666.727 134.911C662.654 132.981 659.531 130.317 657.358 126.918C655.186 123.519 654.099 119.66 654.099 115.342C654.099 108.452 656.634 103.031 661.703 99.0808C666.863 95.1304 674.784 93.1551 685.465 93.1551H702.302C702.302 88.4697 700.899 84.8867 698.093 82.4062C695.287 79.8338 691.077 78.5477 685.465 78.5477C681.573 78.5477 677.725 79.1908 673.924 80.477C670.212 81.6713 667.044 83.3249 664.419 85.438L656.815 70.4171C660.798 67.5691 665.55 65.3642 671.072 63.8024C676.685 62.2406 682.433 61.4597 688.317 61.4597ZM686.687 123.335C690.308 123.335 693.522 122.508 696.328 120.854C699.134 119.109 701.125 116.582 702.302 113.275V105.696H687.773C679.083 105.696 674.738 108.589 674.738 114.377C674.738 117.133 675.779 119.338 677.861 120.992C680.034 122.554 682.976 123.335 686.687 123.335Z" fill="#8136F5"/>
             </svg>
-            
         </figure>
         <hr />
       </section>
     </header>
-
+    <main>
+      <span class="email-title email-container"> <h2>Bienvenido a la comunidad de negocios que no paran de crecer </h2> </span>
+      <span class="email-text email-container"> <p> Continúa tu registro con el siguiente código: </p> </span>
+      <!-- TODO: REEMPLAZAR TEXTO DE LA SIGUIENTE ETIQUETA POR LA VARIABLE DINÁMICA DEL OTP GENERADO DESDE EL BACKEND -->
+      <span class="email-otp email-container"> <h3> {{OTP CODE}} </h3> </span>
+    </main>
     <footer>
       <hr />
       <span class="kuadraTeam-span">
